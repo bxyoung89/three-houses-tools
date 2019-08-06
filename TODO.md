@@ -6,3 +6,4 @@ Todo list
 - favicons
 - japanese translation
 - get github page working
+- responsive for lost item thing

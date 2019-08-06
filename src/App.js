@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LostItemPerson from './lostItems/lostItemPerson';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LostItemPerson personId={16} items={['test 1', 'test 2']}/>
+      <LostItemPerson personId={0} items={['test 1', 'test 2']}/>
+      <LostItemPerson personId={8} items={['test 1', 'test 2']}/>
+      <LostItemPerson personId={24} items={['test 1', 'test 2']}/>
     </div>
   );
 }
