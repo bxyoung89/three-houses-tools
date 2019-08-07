@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	font-family: 'Noto Serif', serif;
+
+	&:lang(ja){
+		@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif&display=swap');
+		font-family: 'Noto Sans JP', sans-serif;
+	}
+}
+
+
