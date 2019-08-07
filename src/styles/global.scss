@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
 	font-family: 'Noto Serif', serif;
+}
 
-	&:lang(ja){
+html:lang(ja) {
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
 		@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif&display=swap');
 		font-family: 'Noto Sans JP', sans-serif;
 	}
@@ -19,4 +25,9 @@ body, html {
 h1 {
 	font-size: 36px;
 	font-weight: bold;
+}
+
+body {
+	background: url('../images/mapBackground.jpg');
+	background-size: cover;
 }

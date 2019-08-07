@@ -73,7 +73,7 @@ export default {
 	"Silver Brooch": 3,
 	"Silver Necklace": 29,
 	"Sketch Of A Sigil": 30,
-	"Small Tan Hide": 7,
+	"Small Tanned Hide": 7,
 	"Snapping Writing Quill": 33,
 	"Songstress Poster": 3,
 	"Spotless Bandage": 17,
@@ -95,5 +95,6 @@ export default {
 	"Well-Used Hatchet": 27,
 	"Wellness Herbs": 32,
 	"White Glove": 0,
-	"Wooden Button": 23
+	"Wooden Button": 23,
+	"Wooden Flask": 31
 }

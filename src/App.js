@@ -1,13 +1,10 @@
 import React from 'react';
-import LostItemPerson from './lostItems/lostItemPerson';
+import LostItems from './lostItems';
 
 function App() {
   return (
     <div className="App">
-      <LostItemPerson personId={16} items={['test 1', 'test 2']}/>
-      <LostItemPerson personId={0} items={['test 1', 'test 2']}/>
-      <LostItemPerson personId={8} items={['test 1', 'test 2']}/>
-      <LostItemPerson personId={24} items={['test 1', 'test 2']}/>
+      <LostItems />
     </div>
   );
 }

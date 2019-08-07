@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import People from '../../data/people';
 import Houses from '../../data/houses';
+import TranslatedText from '../../components/translatedText';
 
 import style from './lostItemsPerson.module.scss';
 
@@ -21,16 +22,14 @@ const LostItemPerson = (props) => {
 		<div className={classnames(style['lost-item-person'], style[house.cssClass])}>
 			<div className={style['rest-of-card']}>
 				<div className={style.name}>
-					{person.name}
+					<TranslatedText string={person.name}/>
 				</div>
 				<div className={style['card-content']}>
 					<div className={style.items}>
 						{
 							items.map(item => (
 								<button onClick={() => onItemRemoved(personId, item)} className={style['item-button']} key={item}>
-									<span>
-										{item}
-									</span>
+									<TranslatedText string={item}/>
 									<div className={style.x}></div>
 								</button>
 							))

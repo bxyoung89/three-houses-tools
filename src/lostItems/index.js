@@ -2,6 +2,8 @@ import React from 'react';
 import LostItemsData from '../data/lostItems';
 import style from './lostItems.module.scss';
 import LostItemPerson from './lostItemPerson';
+import TranslatedText from '../components/translatedText';
+import TranslationService from '../services/translationService';
 
 export default class LostItems extends React.Component {
 
@@ -70,14 +72,18 @@ export default class LostItems extends React.Component {
 		return (
 			<div className={style['lost-items']}>
 				<h1>
-					Lost Items
+					<TranslatedText string='Lost Items'/>
 				</h1>
 				<div>
 					<select className={style['item-select']} value='' onChange={(event) => this.handleItemSelected(event.target.value)}>
-						<option value='' disabled>Please Select a Lost Item</option>
+						<option value='' disabled>
+							{TranslationService.getTranslatedText('Please Select a Lost Item')}
+						</option>
 						{
 							availableItems.map(item => (
-								<option value={item} key={item} onClick={() => this.handleItemSelected(item)}>{item}</option>
+								<option value={item} key={item} onClick={() => this.handleItemSelected(item)}>
+									{TranslationService.getTranslatedText(item)}
+								</option>
 							))
 						}
 					</select>
