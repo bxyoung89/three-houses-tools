@@ -27,7 +27,7 @@ const LostItemPerson = (props) => {
 					<div className={style.items}>
 						{
 							items.map(item => (
-								<button onClick={onItemRemoved(personId, item)} className={style['item-button']}>
+								<button onClick={() => onItemRemoved(personId, item)} className={style['item-button']} key={item}>
 									<span>
 										{item}
 									</span>
@@ -43,7 +43,7 @@ const LostItemPerson = (props) => {
 				<div className={style['portrait']}>
 					<div className={style['image-wrapper-wrapper']}>
 						<div className={style['image-wrapper']}>
-							<img src={person.portrait} />
+							<img src={person.portrait} alt={person.name} />
 						</div>
 					</div>
 				</div>

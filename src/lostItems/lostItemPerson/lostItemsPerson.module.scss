@@ -11,13 +11,16 @@
 			background: $mellow-red;
 		}
 	}
+
 	&.church {
 	}
+
 	&.faerghus {
 		.rest-of-card {
 			background: $mellow-blue;
 		}
 	}
+
 	&.leicester {
 		.rest-of-card {
 			background: $mellow-yellow;
@@ -78,6 +81,7 @@
 	bottom: 0;
 	right: 0;
 	transform: rotate(-45deg);
+
 	> img {
 		height: 150%;
 		width: 150%;
@@ -154,16 +158,54 @@
 .item-button {
 	background: transparent;
 	border: 0;
-	display: block;
 	cursor: pointer;
-	&:not(:last-child){
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+
+	&:not(:last-child) {
 		margin-bottom: 10px;
 	}
 
 	&:hover {
 		background: rgba($red, 0.1);
+
+		.x {
+			display: block;
+		}
 	}
 }
 
-.x {}
+.x {
+	position: relative;
+	display: none;
+	margin-left: 20px;
+	height: 16px;
+	width: 16px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		height: 16px;
+		width: 5px;
+		background: $red;
+		transform: rotate(-45deg);
+		transform-origin: center;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 5px;
+		height: 16px;
+		width: 5px;
+		background: $red;
+		transform: rotate(45deg);
+		transform-origin: center;
+	}
+}
 
