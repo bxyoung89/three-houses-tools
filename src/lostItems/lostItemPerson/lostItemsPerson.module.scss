@@ -36,7 +36,6 @@
 .portrait {
 	height: 160px;
 	width: 120px;
-	//overflow: hidden;
 	transform: rotate(45deg);
 	background: $mid-grey;
 	position: relative;
@@ -150,7 +149,6 @@
 	height: calc(100% - 30px);
 	width: calc(100% - 100px);
 	padding: 20px;
-	//background: red;
 	border-top-left-radius: 65px;
 	border-bottom-left-radius: 65px;
 }
@@ -210,3 +208,36 @@
 	}
 }
 
+@media (max-width: 750px) {
+	.lost-item-person {
+		padding: 20px 0;
+		height: auto;
+	}
+
+	.name {
+		width: auto;
+		padding: 0 20px;
+		left: 0;
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.portrait-wrapper {
+		width: 80px;
+		margin-left: -30px;
+	}
+
+	.portrait {
+		height: 80px;
+		width: 60px;
+	}
+
+	.image-wrapper {
+		height: 80px;
+		width: 60px;
+	}
+
+	.card-content {
+		margin-top: 10px;
+	}
+}
