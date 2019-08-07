@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a318b6d5d1d5e74b72bd5c47855c2c37",
+    "revision": "7e0730dfcb1e7c1f19c6fcf1e376ff7a",
     "url": "/three-houses-tools/index.html"
   },
   {
-    "revision": "f387c664aca8c5865e4e",
-    "url": "/three-houses-tools/static/css/main.7d7b2299.chunk.css"
+    "revision": "77a4189ba84e3134e338",
+    "url": "/three-houses-tools/static/css/main.93653743.chunk.css"
   },
   {
-    "revision": "55a31d44accf9c3c373e",
-    "url": "/three-houses-tools/static/js/2.86865fc6.chunk.js"
+    "revision": "4e273117c88f810a7567",
+    "url": "/three-houses-tools/static/js/2.ffe92838.chunk.js"
   },
   {
-    "revision": "f387c664aca8c5865e4e",
-    "url": "/three-houses-tools/static/js/main.548aba92.chunk.js"
+    "revision": "77a4189ba84e3134e338",
+    "url": "/three-houses-tools/static/js/main.050de833.chunk.js"
   },
   {
     "revision": "e85543528abf84f83a93",
@@ -142,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "291da0d940251806defc30817062b299",
     "url": "/three-houses-tools/static/media/manuela.291da0d9.png"
+  },
+  {
+    "revision": "5c2f258c7ca94b839b993a37396a67eb",
+    "url": "/three-houses-tools/static/media/mapBackground.5c2f258c.jpg"
   },
   {
     "revision": "a461f5d2ddd20885843df8a2b57abe3d",
